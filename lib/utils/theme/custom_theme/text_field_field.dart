@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TTextFieldField {
   TTextFieldField._();
 
-  static InputDecorationTheme lightTextFieldTheme = InputDecorationTheme(
+  static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
@@ -36,6 +36,36 @@ class TTextFieldField {
       borderSide: BorderSide(width:2, color: Colors.orange),
     ),
   );
+  static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
+    errorMaxLines: 2,
+    prefixIconColor: Colors.grey,
+    suffixIconColor: Colors.grey,
+    labelStyle:TextStyle().copyWith(fontSize: 14, color: Colors.white),
+    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.white),
+    floatingLabelStyle: TextStyle().copyWith(color: Colors.white.withOpacity(.8)),
+    border: OutlineInputBorder().copyWith(
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(width:1, color: Colors.grey),
+    ),
 
+    enabledBorder: OutlineInputBorder().copyWith(
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(width:1, color: Colors.grey),
+    ),
 
+    focusedBorder: OutlineInputBorder().copyWith(
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(width:1, color: Colors.white),
+    ),
+
+    errorBorder: OutlineInputBorder().copyWith(
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(width:1, color: Colors.red),
+    ),
+
+    focusedErrorBorder: OutlineInputBorder().copyWith(
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(width:2, color: Colors.orange),
+    ),
+  );
 }
