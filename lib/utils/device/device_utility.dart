@@ -130,7 +130,7 @@ class TDeviceUtility {
     //
     // Locking a specific screen to portrait (e.g., login)
     //
-    // Allowing landscape mode for video player screens
+    // Allowing landscape mode for video player screens.onboarding
     return SystemChrome.setPreferredOrientations(orientations);
   }
 
