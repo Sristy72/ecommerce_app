@@ -25,7 +25,7 @@ class TAppTheme{
     checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
     chipTheme: TChipTheme.lightChipTheme,
     outlinedButtonTheme: TOutlinedButton.lightOutlinedButtonTheme,
-    inputDecorationTheme: TTextFieldField.lightInputDecorationTheme
+    inputDecorationTheme: TTextFormField.lightInputDecorationTheme
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -40,6 +40,6 @@ class TAppTheme{
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
     chipTheme: TChipTheme.darkChipTheme,
     outlinedButtonTheme: TOutlinedButton.darkOutlinedButtonTheme,
-    inputDecorationTheme: TTextFieldField.darkInputDecorationTheme
+    inputDecorationTheme: TTextFormField.darkInputDecorationTheme
   );
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../utils/constants/image_strings.dart';
-import '../../../../utils/constants/text_strings.dart';
-import '../../controllers.onboarding/onboarding_controller.dart';
+import '../../../../../utils/constants/image_strings.dart';
+import '../../../../../utils/constants/text_strings.dart';
+import '../../../controllers.onboarding/onboarding_controller.dart';
 import '../widgets/on_boarding_dot_navigation.dart';
 import '../widgets/on_boarding_next_button.dart';
 import '../widgets/on_boarding_page.dart';
@@ -13,8 +13,8 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     //final controller = Get.put(OnboardingController());
-    final controller = OnboardingController.instance;
+     final controller = Get.put(OnboardingController());
+
 
     return Scaffold(
       body: Stack(

@@ -26,13 +26,13 @@ class TSizes{
   static const dynamic buttonElevation = 4;
 
   //Appbar Height
-  static const appBarHeight = 56;
+  static const appBarHeight = 56.0;
 
   //Image sizes
   static const double imageThumbSize = 80;
 
   //Default Spacing between sections
-  static const double defaultSpace = 24;
+  static const double defaultSpace = 16;
   static const double spaceBetweenItems = 16;
   static const double spaceBetweenSections = 32;
 
