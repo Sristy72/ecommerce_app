@@ -1,6 +1,6 @@
 class TValidator{
   static String? validateEmail(String value){
-    if(value == null || value.isEmpty){
+    if(value.isEmpty){
       return 'Please enter your email';
     }
     //Regular expression for email validation
@@ -12,7 +12,7 @@ class TValidator{
   }
 
   static String? validatePassword(String value){
-    if(value == null || value.isEmpty){
+    if(value.isEmpty){
       return 'Please enter your password';
     }
     if(value.length < 6){
@@ -37,7 +37,7 @@ class TValidator{
   }
 
   static String? validatePhoneNumber(String value) {
-    if (value == null || value.isEmpty) {
+    if (value.isEmpty) {
       return 'Please enter your phone number';
     }
     //Regular expression for phone number validation

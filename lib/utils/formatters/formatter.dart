@@ -9,7 +9,7 @@ class TFormatter {
   }
 
   static String formatCurrency(double amount) {
-    return NumberFormat.currency(locale: 'en_US', symbol: '\৳').format(amount);
+    return NumberFormat.currency(locale: 'en_US', symbol: '৳').format(amount);
   }
 
   static String formatPhoneNumber(String phoneNumber) {
