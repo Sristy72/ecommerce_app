@@ -2,9 +2,11 @@ import 'package:ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:ecommerce_app/common/widgets/list_tile/setting_menu_tile.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce_app/features/personalization/screens/profile/profile_screen.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
@@ -34,7 +36,9 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(height: TSizes.spaceBetweenSections,),
 
                   ///User profile card
-                  TUserProfileTile(),
+                  TUserProfileTile(onPressed: () {
+                    Get.to(ProfileScreen());
+                  },),
 
                   SizedBox(height: TSizes.spaceBetweenSections,)
                 ],

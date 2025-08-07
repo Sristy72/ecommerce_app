@@ -21,7 +21,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
               top: -150,
               right: -250,
               child: TCircularContainer(
-                width: 400,
+                width: 200,
                 height: 400,
                 radius: 400,
                 backgroundColor: TColors.textWhite.withOpacity(.1),

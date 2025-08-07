@@ -36,9 +36,9 @@ class TImages{
   static const String promoBanner4 = 'assets/images/banners/promo-banner-4.jpg';
 
   //Products
-  static const String productImage1 = 'assets/images/products/nike_shoe.png';
+  static const String productImage1 = 'assets/images/products/nike.png';
   static const String productImage2 = 'assets/images/products/product_2.png';
-  static const String productImage3 = 'assets/images/products/product1.jpg';
+  static const String productImage3 = 'assets/images/products/product1.png';
 
   //brands
   static const String nikeLogo = 'assets/icons/brands/Nike-Logo.png';
