@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/features/shop/screens/product_details/widget/product_attributes.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widget/product_detail_image_slider.dart';
+import 'package:ecommerce_app/features/shop/screens/product_details/widget/product_meta_data.dart';
 import 'package:ecommerce_app/features/shop/screens/product_details/widget/rating_and_share.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/helpers/helper_function.dart';
@@ -28,9 +30,11 @@ class ProductDetailsScreen extends StatelessWidget {
               ),
               child: Column(children: [
                 ///Rating and share
-                TRatingAndShare()
+                TRatingAndShare(),
                 ///price , title, Stock and brand
+                TProductMetaData(),
                 ///attributes
+                TProductAttribute()
                 ///Checkout button
                 ///Description
                 ///Reviews
