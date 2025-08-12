@@ -44,5 +44,8 @@ class TImages{
   static const String nikeLogo = 'assets/icons/brands/Nike-Logo.png';
 
   //profile
-  static const String user = 'assets/images/user/user.png';
+  static const String user = 'assets/images/reviews/user.png';
+
+  //Review Images
+  static const String reviewImage1 = 'assets/images/reviews/user.png';
 }

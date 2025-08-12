@@ -76,12 +76,39 @@ class TProductAttribute extends StatelessWidget {
 
         ///Attributes
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TSectionHeading(title: 'Color', showActionButton: false,),
             SizedBox(height: TSizes.spaceBetweenItems / 2,),
-            TChoiceChips(text: 'Green', selected: true,)
+            Wrap(
+              spacing: 8,
+              children: [
+                TChoiceChips(text: 'Green', selected: true, onSelected: (value){},),
+                TChoiceChips(text: 'Red', selected: false,onSelected: (value){}),
+                TChoiceChips(text: 'Blue', selected: true,onSelected: (value){}),
+                TChoiceChips(text: 'Yellow', selected: false,onSelected: (value){}),
+              ],
+            )
           ],
-        )
+        ),
+
+        SizedBox(height: TSizes.spaceBetweenItems / 2,),
+
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TSectionHeading(title: 'Size', showActionButton: false,),
+            SizedBox(height: TSizes.spaceBetweenItems / 2,),
+            Wrap(
+              spacing: 8,
+              children: [
+                TChoiceChips(text: 'EU 34', selected: true,onSelected: (value){},),
+                TChoiceChips(text: 'EU 36', selected: false,onSelected: (value){}),
+                TChoiceChips(text: 'EU 38', selected: true,onSelected: (value){}),
+              ],
+            )
+          ],
+        ),
       ],
     );
   }

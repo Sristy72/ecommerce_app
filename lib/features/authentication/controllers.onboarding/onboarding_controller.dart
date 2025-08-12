@@ -90,10 +90,9 @@ class OnboardingController extends GetxController {
     //   int page = currentPageIndex.value + 1;
     //   pageController.jumpToPage(page);
     // }
-    // if(currentPageIndex.value == 2){
     //
-    // }
-    // currentPageIndex.value = 2;
-    Get.to(LoginScreen());
+    // //Get.to(LoginScreen());
+
+    Get.offAll(LoginScreen());
   }
 }
