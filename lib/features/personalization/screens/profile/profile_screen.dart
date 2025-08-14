@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TAppBar(
-        title: Text('Profile'),
+        title: Text('Profile', style: Theme.of(context).textTheme.headlineMedium,),
         showSnackArrow: true,
       ),
 

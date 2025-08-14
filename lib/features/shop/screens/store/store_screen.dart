@@ -3,10 +3,13 @@ import 'package:ecommerce_app/common/widgets/custom_shapes/container/search_cont
 import 'package:ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce_app/features/shop/screens/cart/cart_screen.dart';
 import 'package:ecommerce_app/features/shop/screens/store/widget/category_tab.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../common/widgets/appbar/tabbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
@@ -26,7 +29,7 @@ class StoreScreen extends StatelessWidget {
             'Store',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          actions: [TCartCounterIcon(onPressed: () {})],
+          actions: [TCartCounterIcon(onPressed: (){})],
         ),
 
         body: NestedScrollView(

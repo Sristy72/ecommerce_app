@@ -15,7 +15,7 @@ class WishlistScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TAppBar(
-        title: Text('Wishlist'),
+        title: Text('Wishlist', style: Theme.of(context).textTheme.headlineMedium,),
         actions: [
           TCircularIcon(icon: Iconsax.add, onPressed: (){Get.to(HomeScreen());},)
         ],
