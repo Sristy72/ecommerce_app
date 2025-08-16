@@ -1,10 +1,8 @@
 import 'package:ecommerce_app/features/shop/screens/cart/widget/cart_item_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
-import '../../../../common/widgets/products/cart/cart_item.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../checkout/checkout_screen.dart';
 

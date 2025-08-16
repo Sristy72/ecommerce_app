@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/features/shop/screens/sub_category/sub_category_screen.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../../utils/constants/image_strings.dart';
@@ -17,7 +19,7 @@ class THomeCategories extends StatelessWidget {
         itemCount: 7,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
-          return TVerticalImageText(image: TImages.shoeIcon, title: 'Shoe Category', onTap: (){},);
+          return TVerticalImageText(image: TImages.shoeIcon, title: 'Shoe Category', onTap: (){Get.to(SubCategoryScreen());},);
         },
       ),
     );

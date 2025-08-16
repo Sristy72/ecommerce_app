@@ -48,4 +48,12 @@ class TImages{
 
   //Review Images
   static const String reviewImage1 = 'assets/images/reviews/user.png';
+
+  //Payment Methods
+  static const String visa = 'assets/icons/payment_methods/visa.png';
+  static const String masterCard = 'assets/icons/payment_methods/mastercard.png';
+  static const String paypal = 'assets/icons/payment_methods/images.png';
+
+  //Payment Successful
+  static const String paymentSuccess = 'assets/icons/payment_success/v5FuXij6op.gif';
 }

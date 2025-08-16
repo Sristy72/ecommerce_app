@@ -38,7 +38,7 @@ class TCartItem extends StatelessWidget {
               TBrandTitleTextWithVerifiedIcon(title: 'Nike'),
               TProductTitleText(title: 'Black Sport Shoe', maxLines: 1,),
 
-              //Attributes
+              ///Attributes
               Text.rich(TextSpan(
                   children: [
                     TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),

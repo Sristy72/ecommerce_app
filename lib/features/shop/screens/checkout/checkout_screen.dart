@@ -1,10 +1,16 @@
 import 'package:ecommerce_app/common/widgets/custom_shapes/container/circular_container.dart';
+import 'package:ecommerce_app/common/widgets/success_screen/success_screen.dart';
 import 'package:ecommerce_app/features/shop/screens/cart/widget/cart_item_list.dart';
 import 'package:ecommerce_app/features/shop/screens/checkout/widget/billing_address_section.dart';
+import 'package:ecommerce_app/features/shop/screens/checkout/widget/billing_amount_section.dart';
 import 'package:ecommerce_app/features/shop/screens/checkout/widget/billing_payment_section.dart';
+import 'package:ecommerce_app/navigation_menu.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
+import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/products/cart/promo_code.dart';
@@ -46,24 +52,42 @@ class CheckoutScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     ///Pricing
-                    TBillingPaymentSection(),
-                    SizedBox(height: TSizes.spaceBetweenItems,),
+                    TBillingAmountSection(),
+                    SizedBox(height: TSizes.spaceBetweenItems),
 
                     ///Divider
                     Divider(),
-                    SizedBox(height: TSizes.spaceBetweenItems,),
+                    SizedBox(height: TSizes.spaceBetweenItems),
 
-                    ///
-                    TBillingAddressSection()
+                    ///Payment Method
+                    TBillingPaymentSection(),
+
+                    ///Shipping Address
+                    TBillingAddressSection(),
                   ],
                 ),
-              )
+              ),
             ],
           ),
+        ),
+      ),
+
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        child: ElevatedButton(
+          onPressed: () {
+            Get.to(
+              SuccessScreen(
+                image: TImages.paymentSuccess,
+                title: 'Payment Success!',
+                subTitle: 'Your order has been placed successfully.',
+                onPressed: () => Get.offAll(NavigationMenu()),
+              ),
+            );
+          },
+          child: Text('Checkout \$256.0'),
         ),
       ),
     );
   }
 }
-
-
